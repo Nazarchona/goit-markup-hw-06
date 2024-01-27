@@ -2,6 +2,7 @@ body{
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #FFFFFF;
+    overflow-x: hidden;
 }
 
 .section{
@@ -238,6 +239,10 @@ address{
 
 address{
     margin-top: 168px;
+}
+
+.mobile-menu-adress{
+    display: block;
 }
 
 .mobile-menu-adress-list{
