@@ -31,9 +31,9 @@ header{
     line-height: 1.17; 
     letter-spacing: 0.03em; 
     text-transform: uppercase;
-    margin-right: 149px;
     padding-top: 16px;
     padding-bottom: 16px;
+    /* margin-right: 149px; */
 }
 
 span{
@@ -129,6 +129,7 @@ address{
 }
 
 .main-contacts{
+    display: none;
     font-style: normal;
 }
 
@@ -154,6 +155,15 @@ address{
 
 .phone-number a:focus{
     color: #404bbf;
+}
+
+.burger-btn{
+    display: flex;
+    align-items: center;
+    
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
 }
 
 .mobile-menu{
@@ -378,6 +388,7 @@ address{
 
 
 .features p{
+    max-width: 100%;
     color: var(--SLATE, #434455);
     font-size: 16px;
     font-style: normal;
@@ -659,9 +670,9 @@ address{
     gap: 72px;
 }
 
-.logo-text{
+/* .logo-text{
     margin-right: 120px;
-}
+} */
 
 .social-title{
     font-weight: 500;
@@ -730,7 +741,7 @@ address{
 }
 
 .subscribe-input{
-    width: 264px;
+    width: 100%;
     height: 40px;
     border: 1px solid #ffffff;
     background-color: transparent;
