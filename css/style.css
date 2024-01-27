@@ -1057,6 +1057,113 @@ p{
     margin-bottom: 8px;
 }
 
+/* @media (min-resolution: 192dpi){
+    .section-with-order-button{background-image: url(../images/OfficePeople-mob-2x.jpg);
+    }
+} */
+
+@media screen and (min-width: 768px) {
+    .mobile-menu{
+        display: none;
+    }
+
+    .container{
+        max-width: 1200px;
+        padding: 0 16px;
+    }
+
+    .burger-btn{
+        display: none;
+    }
+
+    .main-links{
+        display: flex;
+    }
+
+    .logo{
+        margin-right: 120px;
+    }
+
+    .adress-list{
+        display: block;
+        align-items: center;
+    }
+
+    .main-contacts{
+        display: flex;
+        gap: 0;
+        margin-top: 0;
+    }
+
+    .section-with-order-button{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/OfficePeople-tab-1x.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 0 auto;
+        max-width: 768px;
+        padding: 112px 0;
+    }
+
+    .first-section-title{
+        display: block;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.07;
+        letter-spacing: 0.02em; /* 1.12/56 */
+        max-width: 496px;
+        margin: 0 auto 36px auto;
+    }
+
+    .features-list{
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+
+    .paragraph-title{
+        text-align: left;
+    }
+
+    .paragraph-title{
+        color: var(--NAVY-BLUE, #2E2F42);
+        /* font-size: 20px; */
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.11; 
+        letter-spacing: 0.02em; 
+        margin-bottom: 8px;
+        flex-wrap: wrap;
+    }
+
+    .features-list-paragraph{
+        width: calc((100% - 24px) / 2);
+        text-align: left;
+    } 
+
+    .features-list-paragraph:nth-last-child(){
+        margin-bottom: 72px;
+    }
+
+    .team-list{
+        flex-direction: unset;
+        flex-wrap: wrap;
+        row-gap: 64px;
+        column-gap: 0;
+        margin: 0 auto;
+        padding: 0 92px;
+    }
+
+    .team-list-paragraph{
+        width: calc((100% - 24px) / 2);
+        max-width: 264px;
+    }
+
+}
+
 
 
 
