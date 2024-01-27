@@ -394,7 +394,6 @@ address{
     font-style: normal;
     font-weight: 500;
     line-height: 1.50; 
-    width: 288px;
     letter-spacing: 0.02em; 
 }
 
@@ -607,7 +606,7 @@ address{
     font-weight: 400;
     line-height: 1.50; 
     letter-spacing: 0.02em; /* 0.32/16 */
-    max-width: 288px;
+    max-width: 100%;
 }
 
 .visually-hidden {
@@ -626,7 +625,7 @@ address{
 
 .container{
     /* width: 1158px; */
-    width: 288px;
+    max-width: 768px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -638,6 +637,7 @@ address{
 .team-list-paragraph{
     background-color: #FFFFFF;
     /* width: calc((100% - 72px) / 4); */
+    margin: 0 auto;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
@@ -752,7 +752,7 @@ address{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: #ffffff;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
 }
 
 .subscribe-input::placeholder{
