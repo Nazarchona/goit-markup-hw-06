@@ -302,8 +302,7 @@ address{
     background: var(--NAVY-BLUE, #2E2F42);
     padding: 0;
     padding: 72px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/OfficePeople-mob-1x.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/OfficePeople-mob-1x.jpg);
     max-width: 320px;
     background-repeat: no-repeat;
     background-position: center;
@@ -1057,10 +1056,11 @@ p{
     margin-bottom: 8px;
 }
 
-/* @media (min-resolution: 192dpi){
-    .section-with-order-button{background-image: url(../images/OfficePeople-mob-2x.jpg);
+@media (min-resolution: 192dpi){
+    .section-with-order-button{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/OfficePeople-mob-2x.jpg);
     }
-} */
+} 
 
 @media screen and (min-width: 768px) {
     .mobile-menu{
@@ -1093,6 +1093,10 @@ p{
         display: flex;
         gap: 0;
         margin-top: 0;
+    }
+
+    .main-contacts li a{
+        font-size: 12px;
     }
 
     .section-with-order-button{
@@ -1162,8 +1166,200 @@ p{
         max-width: 264px;
     }
 
+    .portfolio-list-point{
+        width: calc((100% - 24px) / 2);
+    }
+
+    .section{
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .basement{
+        padding: 96px 0;
+    }
+
+    .basement-content-wrap{
+        padding: 0 92px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 64px;
+    }
+
+    .footer-text{
+        max-width: 264px;
+    }
+
+    .footer-logo{
+        text-align: left;
+    }
+
+    .subscribe-form{
+        display: flex;
+        gap: 24px;
+    }
+
+    .subscribe-input{
+        min-width: 264px;
+    }
+
+    .subscribe-title{
+        text-align: left;
+    }
+
+    .social-title{
+        text-align: left;
+    }
+
+    .modal{
+        width: 408px;
+        min-height: 584px;
+        padding: 72px 25px 24px 23px
+    }
+
+    .modal-input{
+        width: 360px;
+    }
+
+    .portfolio-container-info{
+        width: 356px;
+    }
 }
 
+@media screen and (min-width: 1158px){
+    .container{
+        width: 1158px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    .logo{
+        margin-right: 76px;
+    }
+
+    .adress-list{
+        display: flex;
+    }
+
+    .main-contacts li a {
+        font-size: 16px;
+    }
+
+    .section-with-order-button{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/OfficePeople.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 0 auto;
+        max-width: 1440px;
+        padding: 188px 0;
+    }
+
+    .first-section-title {
+        display: block;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        max-width: 496px;
+        margin: 0 auto 48px auto;
+    }
+
+    .features-list{
+        display: flex;
+        gap: 24px;
+        margin: 0;
+        padding: 0;
+        flex-wrap: nowrap;
+    }
+
+    .features-list .icon-box{
+        display: flex;
+    }
+
+    .paragraph-title{
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .features p{
+        font-weight: 400;
+    }
+
+    .team-list{
+        display: flex;
+        gap: 24px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .team-list-paragraph{
+      width: calc((100% - 72px) / 4);
+    }
+
+    .section{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .portfolio-container-info{
+        width: 360px;
+    }
+
+    .portfolio-list-point{
+        background: #FFF;
+        padding: 0;
+        width: calc((100% - 48px) / 3);
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+    }
+
+    .basement{
+        padding: 100px 0;
+    }
+
+    .basement .footer-logo{
+        display: inline-block;
+        margin-bottom: 17.5px;
+    }
+
+    .basement-content-wrap{
+        display: flex;
+        align-items: baseline;
+    }
+
+    .logo-text{
+        margin-right: 120px;
+    }
+
+    .subscribe-form{
+        display: flex;
+        gap: 24px;
+    }
+
+    .subscribe-input{
+        min-width: 264px;
+        line-height: 2;
+        padding-left: 16px;
+    }
+    
+    .subscribe-btn{
+        min-width: 165px;
+        height: 40px;
+        display: flex;
+    }
+
+    .basement-content-wrap{
+        flex-wrap: nowrap;
+        gap: 0;
+    }
+
+    .subscribe-area{
+        margin-left: 80px;
+    }
+}
 
 
 
