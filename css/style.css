@@ -6,8 +6,8 @@ body{
 }
 
 .section{
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 header{
@@ -161,7 +161,6 @@ address{
 .burger-btn{
     display: flex;
     align-items: center;
-    
     background-color: transparent;
     margin: 0;
     padding: 0;
@@ -175,7 +174,6 @@ address{
     height: 100%;
     background-color: var(--NAVY-BLUE-modal, rgb(255, 255, 255));
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 24px 24px 40px 16px;
 }
 
 .mobile-menu-close-btn{
@@ -200,7 +198,8 @@ address{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-top: 48px
+    padding-top: 72px;
+    padding-left: 16px;
 }
 
 .mobile-menu-adress-list{
@@ -234,15 +233,14 @@ address{
 
 .mobile-menu-links{
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
+    height: 100%;
 }
 
-address{
-    margin-top: 168px;
-}
 
 .mobile-menu-adress{
-    display: block;
+    padding-left: 16px;
+    margin-top: auto;
 }
 
 .mobile-menu-adress-list{
@@ -277,7 +275,8 @@ address{
     align-items: center;
     justify-content: center;
     gap: 40px;
-    margin-top: 48px;
+    padding-bottom: 40px;
+    margin-top: auto;
 }
 
 .mobile-menu-social-link{
@@ -684,7 +683,7 @@ address{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #ffffff;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
     text-align: center;
 }
 
@@ -1123,7 +1122,8 @@ p{
     .features-list{
         display: flex;
         flex-direction: row;
-        gap: 24px;
+        column-gap: 24px;
+        row-gap: 72px;
         flex-wrap: wrap;
     }
 
@@ -1156,9 +1156,9 @@ p{
         flex-direction: unset;
         flex-wrap: wrap;
         row-gap: 64px;
-        column-gap: 0;
+        column-gap: 24px;
         margin: 0 auto;
-        padding: 0 92px;
+        min-width: 552px;
     }
 
     .team-list-paragraph{
@@ -1240,6 +1240,10 @@ p{
 
     .adress-list{
         display: flex;
+    }
+
+    .adress-list li{
+        gap: 12px;
     }
 
     .main-contacts li a {
@@ -1343,6 +1347,7 @@ p{
         min-width: 264px;
         line-height: 2;
         padding-left: 16px;
+        margin: 0;
     }
     
     .subscribe-btn{
@@ -1358,6 +1363,17 @@ p{
 
     .subscribe-area{
         margin-left: 80px;
+    }
+
+    .modal{
+        width: 408px;
+        min-height: 584px;
+        padding: 72px 24px 24px 24px;
+    }
+
+    .modal-input{
+        width: 360px;
+        padding-left: 38px;
     }
 }
 
